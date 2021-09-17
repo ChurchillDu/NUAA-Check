@@ -1,4 +1,19 @@
 # Bug南航- i南航 自动打卡系统
+
+---
+
+关于想实现i南航自动打卡的艰难历程：
+
+- http canary 抓包，勉强能看懂抓出来的是什么东西
+- 学了学python，自己不会写，拿到别人写的轮子自己多少会用了
+- 因为自己是重度telegram使用者，学会了如何把打卡结果转发到telegram，比微信可好用多了
+- ![image-20210917193407827](C:\Users\Churchill Du\AppData\Roaming\Typora\typora-user-images\image-20210917193407827.png)
+- 了解了github action，看的不是太懂，但是好好用，直接省了一个服务器,amazing
+
+----
+
+正文分割线
+
 ## 使用方法
 1. fork（就是整个页面右上角那个fork）本项目到自己的仓库
 2. 在settings(对，就是上面一栏code issues最后一个，点进去左边找到secrets里面设置以下secrets,详见[参数配置](#canshu)
