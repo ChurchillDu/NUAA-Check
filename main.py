@@ -51,6 +51,7 @@ def get_cookies():
 
 import datetime
 def send(message):
+    """
     url = 'https://sc.ftqq.com/{}.send'.format(secket)
     params = dict()
     params['text'] = 'i南航打卡'
@@ -81,6 +82,15 @@ def send(message):
         raise AssertionError("无法发送消息")
     else:
         logger.info("发送消息成功")
+    """
+    time_now = datetime.datetime.now() + datetime.timedelta(hours=8)  # 转换成中国时间
+    message = time_now.strftime("%Y-%m-%d %H:%M:%S\n\n   ") + str(username) + ":" + message
+    url = 'https://api.telegram.org/bot{}/sendMessage?chat_id={}&text={}'.format(bot_token, chat_id, message)
+    #response=requests.get(url, proxies=proxyDict)
+    response = requests.get(url)
+    if response.status_code!=200:
+        logger.warning("错误信息:{}".format(response.status_code))
+        raise AssertionError("无法发送消息")
 
 
 def save(cookies):
