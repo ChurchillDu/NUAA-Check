@@ -20,7 +20,7 @@ jobs:
         bot_token: ${{secrets.BOT_TOKEN}}
         chat_id: ${{secrets.CHAT_ID}}
       run: |
-        git clone https://github.com/li1553770945/NUAA-Check .
+        git clone https://github.com/ChurchillDu/NUAA-Check .
         sudo apt-get install python-setuptools python3-setuptools
         pip3 install requests cpca
         python3 main.py 
