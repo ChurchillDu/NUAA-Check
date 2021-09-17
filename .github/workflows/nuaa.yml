@@ -2,7 +2,7 @@ name: nuaa
 # 每天00:30打卡
 on:
   push:
-    branches: master
+    branches: [main]
   schedule:
     - cron: '01 16 * * *'
 
