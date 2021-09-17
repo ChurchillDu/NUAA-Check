@@ -18,9 +18,11 @@ cfg.read_file(codecs.open('config.ini', "r", "utf-8-sig"))
 submit_params = dict(cfg['save'])
 username = os.getenv('student_id')
 password = os.getenv('password')
-secket = os.getenv('sckey')
-
+#secket = os.getenv('sckey')
 address = os.getenv('address')
+bot_token = os.getenv('bot_token')
+chat_id = os.getenv('chat_id')
+
 df = cpca.transform([address])
 province = df.iat[0, 0]
 city = df.iat[0, 1]
