@@ -7,7 +7,7 @@
 - http canary 抓包，勉强能看懂抓出来的是什么东西
 - 学了学python，自己不会写，拿到别人写的轮子自己多少会用了
 - 因为自己是重度telegram使用者，学会了如何把打卡结果转发到telegram，比微信可好用多了
-- ![image-20210917193407827](C:\Users\Churchill Du\AppData\Roaming\Typora\typora-user-images\image-20210917193407827.png)
+![image](https://user-images.githubusercontent.com/62705137/133776485-1ecdc980-368a-4447-846c-88bfdabbd7b0.png)
 - 了解了github action，看的不是太懂，但是好好用，直接省了一个服务器,amazing
 
 ----
