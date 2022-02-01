@@ -1,6 +1,7 @@
 name: nuaa
 # 每天00:30打卡
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   schedule:
